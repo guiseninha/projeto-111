@@ -1,0 +1,14 @@
+import os
+import shutil
+
+from_dir="C:/Users/mayko/Downloads"
+to_dir="C:/Users/mayko/Downloads/112"
+
+list_of_files = os.listdir(from_dir)
+
+for file_name in list_of_files:
+    name, extension = os.path.splitext(file_name)
+    print(name)
+    print(extension)
+    if extension == '':
+        continue
